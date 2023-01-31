@@ -1,0 +1,29 @@
+
+#mongodb connection
+#spring.data.mongodb.host=localhost
+#spring.data.mongodb.port=27017
+#spring.data.mongodb.database=mongodb+srv://root:<password>@cluster0.tjgzypk.mongodb.net/?retryWrites=true&w=majority
+spring:
+  application:
+    name: Spring boot application with Redis and Mongodb
+  data:
+    mongodb:
+      uri: mongodb+srv://rupesh:qc6xFel4N7dOA505@cluster0.tjgzypk.mongodb.net/?retryWrites=true&w=majority
+      database: BookStore
+    redis:
+      host: localhost
+      port: 6379
+  cache:
+    type: redis
+    redis:
+      cache-null-values: true
+      time-to-live: 40000
+      use-key-prefix: true
+      #key-prefix: test
+      enable-statistics: true
+
+
+
+
+
+
